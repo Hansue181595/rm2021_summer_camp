@@ -1,0 +1,15 @@
+<launch>
+	 <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+	 <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+	 <node pkg="formation" type="create_turtle" name="create_turtle" output="screen"/>
+	 <node pkg="tf2_ros" type="static_transform_publisher" name="tfpub2" args="-1 -1 0 0 0 0 /turtle1 /pos2" output="screen" />
+	 <node pkg="tf2_ros" type="static_transform_publisher" name="tfpub3" args="-1 1 0 0 0 0 /turtle1 /pos3" output="screen" />
+	 <node pkg="formation" type="pub1" name="pub1" output="screen"/>
+	 <node pkg="formation" type="pub2" name="pub2" output="screen"/>
+	 <node pkg="formation" type="pub3" name="pub3" output="screen"/>
+	 <node pkg="formation" type="pub4" name="pub4" output="screen"/>
+	 <node pkg="formation" type="pub5" name="pub5" output="screen"/>
+	 <node pkg="formation" type="sub1" name="sub1" output="screen"/>
+	 <node pkg="formation" type="sub2" name="sub2" output="screen"/>
+	 
+</launch>
