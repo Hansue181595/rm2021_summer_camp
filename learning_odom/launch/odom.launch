@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+	<node pkg="learning_odom" type="my_odom" name="my_odom" output="screen"/>
+	<node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+</launch>
